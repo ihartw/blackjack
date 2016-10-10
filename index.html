@@ -1,18 +1,56 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<title></title>
+	<title>BlackJack</title>
+	<link rel="shortcut icon" type="text/css" href="img/heart.png">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
-
 <body>
 
- 
+	<div class="dealerGirl">
+		<img src="img/dealergirl.png" class="img-responsive">
+	</div>
+
+
+	<div class="dealer">
+		<h1>Dealer</h1>
+		<div id="dealerCards">
+		</div>
+	</div>
+	<div class="player">
+		<h1>You</h1>
+		<div id="myCards">
+		</div>
+	</div>
+	<div class="game-controls">
+		<div id="startGame">
+			<button class="btn btn-lg btn-danger" onClick="dealCards()">Deal the Cards</button>
+		</div>
+		<div id="inGame">
+		  <button class="btn btn-lg btn-danger" type="button" onClick="addCard()">Hit</button>
+		  <button class="btn btn-lg btn-danger" type="button" onClick="dealerTurn()">Stay</button>
+		</div>
+		<div id="playAgain">
+			<button class="btn btn-lg btn-danger" type="button" onclick="playAgain()">Play Again?</button>
+		</div>
+	</div>
+	<div class="results">
+		<div id="winner">
+			<h1>YOU WIN!!!</h1>
+		</div>
+		<div id="loser">
+			<h1>Dealer wins</h1>
+		</div>
+		<div id="tie">
+			<h1>Tie</h1>
+		</div>
+	</div>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="js/main.js"></script>
 </body>
-
 </html>

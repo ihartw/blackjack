@@ -1,0 +1,69 @@
+body {
+  background-image: url(../img/table.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  font-family: 'Poiret One', cursive;
+}
+
+#inGame, #winner, #loser, #tie, #playAgain, #faceDown {
+	display: none;
+}
+
+.dealerGirl {
+	position: absolute;
+	left: 45%;
+}
+
+img {
+	height: 150px;
+	width: 100px;
+	display: inline-block;
+	float: left;
+	margin-left: 2%;
+}
+.player {
+	float: left;
+	height: 200px;
+	width: 30%;
+	margin: 10% auto;
+	color: white;
+	font-family: 'Poiret One', cursive;
+}
+
+.player img {
+	float: right;
+}
+
+.dealer {
+	float: right;
+	height: 200px;
+	width: 30%;
+	margin: 10% auto
+}
+
+.dealer h1 {
+	color: white;
+	font-family: 'Poiret One', cursive;
+}
+
+.dealer img {
+	float: left;
+}
+.results {
+	margin: 0px auto;
+	height: 200px;
+	width: 100%;	
+}
+.results h1 {
+	font-size: 100px;
+	color: white;
+	font-family: 'Poiret One', cursive; 
+}
+
+.game-controls {
+	height: auto;
+	clear: both;
+	font-family: 'Poiret One', cursive;
+}
